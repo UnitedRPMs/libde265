@@ -5,7 +5,7 @@
 
 Name:           libde265
 Version:        1.0.3
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        Open h.265 video codec implementation
 Group:		System Environment/Libraries
 License:        LGPLv2 and GPLv2
@@ -18,8 +18,8 @@ BuildRequires:	automake
 BuildRequires:	libtool
 BuildRequires:	pkgconfig
 BuildRequires:	pkgconfig(libswscale)
-BuildRequires:	pkgconfig(QtCore)
-BuildRequires:	pkgconfig(QtGui)
+BuildRequires:	pkgconfig(Qt5Core)
+BuildRequires:	pkgconfig(Qt5Gui)
 
 %description
 libde265 is an open source implementation of the h.265 video codec. It is
@@ -73,6 +73,10 @@ find %{buildroot} -name '*.*a' -delete
 %{_libdir}/pkgconfig/libde265.pc
 
 %changelog
+
+* Tue Nov 27 2018 Unitedrpms Project <unitedrpms AT protonmail DOT com> 1.0.3-3
+- Migration to qt5
+
 * Sat Nov 03 2018 Unitedrpms Project <unitedrpms AT protonmail DOT com> 1.0.3-2
 - Initial build
 
