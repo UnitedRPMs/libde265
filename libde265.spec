@@ -1,11 +1,11 @@
-%global commit0 4488ae0c3b287ef6f24a958004481b2b337abc76
+%global commit0 d065715fb8792f1559787bdd79c3a5b5a5f9e9a9
 %global shortcommit0 %(c=%{commit0}; echo ${c:0:7})
 %global gver .git%{shortcommit0}
 
 
 Name:           libde265
-Version:        1.0.3
-Release:        3%{?dist}
+Version:        1.0.4
+Release:        7%{?dist}
 Summary:        Open h.265 video codec implementation
 Group:		System Environment/Libraries
 License:        LGPLv2 and GPLv2
@@ -73,6 +73,9 @@ find %{buildroot} -name '*.*a' -delete
 %{_libdir}/pkgconfig/libde265.pc
 
 %changelog
+
+* Fri Dec 20 2018 Unitedrpms Project <unitedrpms AT protonmail DOT com> 1.0.4-7
+- Updated to 1.0.4-7
 
 * Tue Nov 27 2018 Unitedrpms Project <unitedrpms AT protonmail DOT com> 1.0.3-3
 - Migration to qt5
