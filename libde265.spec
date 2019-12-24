@@ -11,6 +11,7 @@ Group:		System Environment/Libraries
 License:        LGPLv2 and GPLv2
 URL:            https://github.com/strukturag/libde265
 Source0:        https://github.com/strukturag/libde265/archive/%{commit0}.tar.gz#/%{name}-%{shortcommit0}.tar.gz
+Patch:		https://github.com/strukturag/libde265/commit/e5b8e2e7.patch
 
 BuildRequires:  pkgconfig(sdl)
 BuildRequires:	autoconf
@@ -48,7 +49,7 @@ Group:		System Environment/Libraries
 The package contains the tools for libde265.
 
 %prep
-%autosetup -n %{name}-%{commit0} 
+%autosetup -n %{name}-%{commit0} -p1
 
 %build
 ./autogen.sh
