@@ -1,10 +1,10 @@
-%global commit0 d065715fb8792f1559787bdd79c3a5b5a5f9e9a9
+%global commit0 19db0e8f5809525a1fb7fb3f57ca59461e7186cd
 %global shortcommit0 %(c=%{commit0}; echo ${c:0:7})
 %global gver .git%{shortcommit0}
 
 
 Name:           libde265
-Version:        1.0.4
+Version:        1.0.5
 Release:        7%{?dist}
 Summary:        Open h.265 video codec implementation
 Group:		System Environment/Libraries
@@ -74,6 +74,9 @@ find %{buildroot} -name '*.*a' -delete
 %{_libdir}/pkgconfig/libde265.pc
 
 %changelog
+
+* Fri Jan 17 2020 Unitedrpms Project <unitedrpms AT protonmail DOT com> 1.0.5-7
+- Updated to 1.0.5
 
 * Fri Dec 20 2018 Unitedrpms Project <unitedrpms AT protonmail DOT com> 1.0.4-7
 - Updated to 1.0.4-7
