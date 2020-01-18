@@ -78,7 +78,7 @@ find %{buildroot} -name '*.*a' -delete
 * Fri Jan 17 2020 Unitedrpms Project <unitedrpms AT protonmail DOT com> 1.0.5-7
 - Updated to 1.0.5
 
-* Fri Dec 20 2018 Unitedrpms Project <unitedrpms AT protonmail DOT com> 1.0.4-7
+* Fri Dec 20 2019 Unitedrpms Project <unitedrpms AT protonmail DOT com> 1.0.4-7
 - Updated to 1.0.4-7
 
 * Tue Nov 27 2018 Unitedrpms Project <unitedrpms AT protonmail DOT com> 1.0.3-3
