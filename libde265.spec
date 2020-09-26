@@ -2,6 +2,9 @@
 %global shortcommit0 %(c=%{commit0}; echo ${c:0:7})
 %global gver .git%{shortcommit0}
 
+#define _legacy_common_support 1
+%global _lto_cflags %{nil}
+
 
 Name:           libde265
 Version:        1.0.7
