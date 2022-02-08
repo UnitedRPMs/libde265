@@ -1,4 +1,4 @@
-%global commit0 8aed7472df0af25b811828fa14f2f169dc34d35a
+%global commit0 900772c3e9ee1e106b93283fd8e7633d52899e40
 %global shortcommit0 %(c=%{commit0}; echo ${c:0:7})
 %global gver .git%{shortcommit0}
 
@@ -8,7 +8,7 @@
 
 Name:           libde265
 Version:        1.0.8
-Release:        7%{?dist}
+Release:        8%{?dist}
 Summary:        Open h.265 video codec implementation
 Group:		System Environment/Libraries
 License:        LGPLv2 and GPLv2
@@ -76,6 +76,10 @@ find %{buildroot} -name '*.*a' -delete
 %{_libdir}/pkgconfig/libde265.pc
 
 %changelog
+
+* Mon Feb 07 2022 Unitedrpms Project <unitedrpms AT protonmail DOT com> 1.0.8-8
+- Rebuilt for ffmpeg
+- Updated to current commit
 
 * Thu Nov 05 2020 Unitedrpms Project <unitedrpms AT protonmail DOT com> 1.0.8-7
 - Updated to 1.0.8
